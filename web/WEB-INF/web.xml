@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+
+
+    <servlet>
+        <servlet-name>coreServlet</servlet-name>
+        <servlet-class>
+            org.jiaozhu.wx.servlet.CoreServlet
+        </servlet-class>
+    </servlet>
+
+    <!-- url-pattern中配置的/coreServlet用于指定该Servlet的访问路径 -->
+    <servlet-mapping>
+        <servlet-name>coreServlet</servlet-name>
+        <url-pattern>/coreServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
